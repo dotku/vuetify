@@ -2,7 +2,7 @@ import Vue, { VNodeData } from 'vue'
 import { VNode, VNodeDirective, FunctionalComponentOptions } from 'vue/types'
 import { VuetifyIcon } from 'vuetify/types/services/icons'
 import mergeData from './mergeData'
-import { compareFn } from '@components/VData/types'
+import { compareFn } from '../components/VData/types'
 
 export function createSimpleFunctional (
   c: string,
