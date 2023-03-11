@@ -1,4 +1,5 @@
 export default {
+  badge: 'Знак',
   close: 'Закрити',
   dataIterator: {
     noResultsText: 'В результаті пошуку нічого не знайдено',
@@ -7,9 +8,12 @@ export default {
   dataTable: {
     itemsPerPageText: 'Рядків на сторінці:',
     ariaLabel: {
-      sortDescending: ': Відсортовано за спаданням. Активувати, щоб видалити сортування.',
-      sortAscending: ': Відсортовано за зростанням. Активувати, щоб відсортувати за спаданням.',
-      sortNone: ': Не відсортовано. Активувати, щоб відсортувати за зростанням.',
+      sortDescending: 'Відсортовано за спаданням.',
+      sortAscending: 'Відсортовано за зростанням.',
+      sortNone: 'Не відсортовано.',
+      activateNone: 'Активувати, щоб видалити сортування.',
+      activateDescending: 'Активувати, щоб відсортувати за спаданням.',
+      activateAscending: 'Активувати, щоб відсортувати за зростанням.',
     },
     sortBy: 'Відсортувати за',
   },
@@ -24,6 +28,10 @@ export default {
   },
   datePicker: {
     itemsSelected: '{0} вибрано',
+    nextMonthAriaLabel: 'Наступного місяця',
+    nextYearAriaLabel: 'Наступного року',
+    prevMonthAriaLabel: 'Попередній місяць',
+    prevYearAriaLabel: 'Попередній рік',
   },
   noDataText: 'Немає даних для відображення',
   carousel: {
@@ -36,6 +44,11 @@ export default {
   calendar: {
     moreEvents: 'Ще {0}',
   },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+  },
   fileInput: {
     counter: '{0} файлів',
     counterSize: '{0} файлів ({1} загалом)',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Навігація по сторінках',
+      next: 'Наступна сторінка',
+      previous: 'Попередня сторінка',
+      page: 'Перейти на сторінку {0}',
+      currentPage: 'Поточна сторінка, Сторінка {0}',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}',
+    },
   },
 }

@@ -1,3 +1,6 @@
+// @ts-nocheck
+/* eslint-disable */
+
 import './VDatePickerYears.sass'
 
 // Mixins
@@ -5,13 +8,16 @@ import Colorable from '../../mixins/colorable'
 import Localable from '../../mixins/localable'
 
 // Utils
-import { createNativeLocaleFormatter } from './util'
+import {
+  createItemTypeNativeListeners,
+  createNativeLocaleFormatter,
+} from './util'
+import { mergeListeners } from '../../util/mergeData'
 import mixins, { ExtractVue } from '../../util/mixins'
 
 // Types
-import Vue, { VNode } from 'vue'
-import { DatePickerFormatter } from './util/createNativeLocaleFormatter'
-import { PropValidator } from 'vue/types/options'
+import Vue, { VNode, PropType } from 'vue'
+import { DatePickerFormatter } from 'vuetify/types'
 
 interface options extends Vue {
   $el: HTMLElement
@@ -32,7 +38,7 @@ export default mixins<options &
   name: 'v-date-picker-years',
 
   props: {
-    format: Function as PropValidator<DatePickerFormatter | undefined>,
+    format: Function as PropType<DatePickerFormatter | undefined>,
     min: [Number, String],
     max: [Number, String],
     readonly: Boolean,
@@ -75,9 +81,9 @@ export default mixins<options &
       return this.$createElement('li', this.setTextColor(color, {
         key: year,
         class: { active },
-        on: {
+        on: mergeListeners({
           click: () => this.$emit('input', year),
-        },
+        }, createItemTypeNativeListeners(this, ':year', year)),
       }), formatted)
     },
 

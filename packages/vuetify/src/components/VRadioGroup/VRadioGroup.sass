@@ -1,24 +1,11 @@
-@import '../../styles/styles.sass'
+@use './variables' as *
 
-.v-input--radio-group
-  &__input
-    display: flex
-    width: 100%
+.v-radio-group
+  > .v-input__control
+    flex-direction: column
 
-  &--column .v-input--radio-group__input > .v-label
-    padding-bottom: 8px
+    > .v-label
+      margin-inline-start: $radio-group-label-margin-inline-start
 
-  &--row .v-input--radio-group__input > .v-label
-    padding-right: 8px
-
-  &--row
-    .v-input--radio-group__input
-      flex-direction: row
-      flex-wrap: wrap
-
-  &--column
-    .v-radio:not(:last-child):not(:only-child)
-      margin-bottom: 8px
-
-    .v-input--radio-group__input
-      flex-direction: column
+      + .v-selection-control-group
+        margin-top: $radio-group-label-selection-group-margin-top

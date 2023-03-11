@@ -1,4 +1,5 @@
 export default {
+  badge: 'Skilt',
   close: 'Lukk',
   dataIterator: {
     noResultsText: 'Fant ingen matchende elementer.',
@@ -7,9 +8,12 @@ export default {
   dataTable: {
     itemsPerPageText: 'Rader per side:',
     ariaLabel: {
-      sortDescending: ': Sortert synkende. Aktiver for å fjerne sortering.',
-      sortAscending: ': Sortert stigende. Aktiver for å sortere synkende.',
-      sortNone: ': Ikke sortert. Aktiver for å sortere stigende.',
+      sortDescending: 'Sortert synkende.',
+      sortAscending: 'Sortert stigende.',
+      sortNone: 'Ikke sortert.',
+      activateNone: 'Aktiver for å fjerne sortering.',
+      activateDescending: 'Aktiver for å sortere synkende.',
+      activateAscending: 'Aktiver for å sortere stigende.',
     },
     sortBy: 'Sorter etter',
   },
@@ -24,6 +28,10 @@ export default {
   },
   datePicker: {
     itemsSelected: '{0} valgt',
+    nextMonthAriaLabel: 'Neste måned',
+    nextYearAriaLabel: 'Neste år',
+    prevMonthAriaLabel: 'Forrige måned',
+    prevYearAriaLabel: 'Forrige år',
   },
   noDataText: 'Ingen data er tilgjengelig',
   carousel: {
@@ -36,6 +44,11 @@ export default {
   calendar: {
     moreEvents: '{0} flere',
   },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+  },
   fileInput: {
     counter: '{0} filer',
     counterSize: '{0} filer ({1} totalt)',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Paginasjonsnavigasjon',
+      next: 'Neste side',
+      previous: 'Forrige side',
+      page: 'Gå til side {0}',
+      currentPage: 'Gjeldende side, side {0}',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}',
+    },
   },
 }

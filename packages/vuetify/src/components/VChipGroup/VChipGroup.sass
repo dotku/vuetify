@@ -1,32 +1,22 @@
-@import './_variables.sass'
-
-// Theme
-+theme(v-chip-group) using ($material)
-  .v-chip:not(.v-chip--active)
-    color: map-deep-get($material, 'text', 'primary') !important
+@use './variables' as *
 
 // Block
 .v-chip-group
+  display: flex
+  max-width: 100%
+  min-width: 0
+  overflow-x: auto
+  padding: $chip-group-padding
+  flex-wrap: wrap // TODO: replace with slide-group
+
   .v-chip
     margin: $chip-group-margin
 
-  .v-chip--active
-    color: inherit
-
-    &.v-chip--no-color
-      &:after
-        opacity: .22
-
-      &:focus:after
-        opacity: .32
-
-// Element
-.v-chip-group .v-slide-group__content
-  padding: $chip-group-content-padding
+    &.v-chip--selected:not(.v-chip--disabled)
+      .v-chip__overlay
+        opacity: $chip-group-selected-opacity
 
 // Modifiers
 .v-chip-group--column
-  .v-slide-group__content
-    white-space: normal
-    flex-wrap: wrap
-    max-width: 100%
+  flex-wrap: wrap
+  white-space: normal

@@ -202,7 +202,7 @@ const opts = {
 }
 ```
 
-* Now defaults to use [mdi](https://materialdesignicons.com/) icons. For information on how to install please navigate [here](https://vuetifyjs.com/customization/icons#install-material-design-icons)
+* Now defaults to use [mdi](https://materialdesignicons.com/) icons. For information on how to install please navigate [here](https://vuetifyjs.com/features/icon-fonts/#material-design-icons)
 * Is now located under the **icons** property of the Vuetify options
 
 If you want to use a custom iconfont, you must set it up in the initial Vuetify options now.
@@ -232,7 +232,7 @@ Vue.use(Vuetify, {
 ```
 
 ### Goto (scrolling helper)
-Import location has changed. Must be explicitly bootstrapped with the Vuetify instance to use in **vue-router** scroll-behavior. Example of how to do this [here](https://github.com/vuetifyjs/vuetify/blob/next/packages/docs/src/vuetify/index.js#L33). Reference documentation for scroll-behavior usage [here](https://next.vuetifyjs.com/en/framework/scroll#using-with-router).
+Import location has changed. Must be explicitly bootstrapped with the Vuetify instance to use in **vue-router** scroll-behavior. Example of how to do this [here](https://github.com/vuetifyjs/vuetify/blob/master/packages/docs/src/vuetify/index.js#L33). Reference documentation for scroll-behavior usage [here](https://v2.vuetifyjs.com/en/framework/scroll#using-with-router).
 
 ```js
 // v1.5
@@ -350,7 +350,7 @@ All event names has been changed from camelCase to kebab-case:
 <!-- v2.0 -->
 
 <v-dialog>
-  <template v-slot:activator="{ on }"
+  <template v-slot:activator="{ on }">
     <v-btn v-on="on">...</v-btn>
   </template>
 </v-dialog>
@@ -757,7 +757,7 @@ _Developer notes: The tabs-items component does not have to be provided and is o
 <v-text-field filled></v-text-field>
 ```
 
-#### `v-text-field`, `v-select`, `v-textarea`, `v-autocomplete`, `v-combobox`, `v-btn`, `v-alert`
+#### `v-text-field`, `v-select`, `v-textarea`, `v-autocomplete`, `v-combobox`, `v-btn`, `v-alert`, `v-chip`
 * The **outline** prop is now **outlined**
 
 ```vue

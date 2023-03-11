@@ -1,87 +1,100 @@
-@import './_variables.scss'
-
-+theme(v-progress-linear) using ($material)
-  color: map-deep-get($material, 'text', 'primary')
+@use '../../styles/tools'
+@use './variables' as *
 
 // Block
 .v-progress-linear
   background: transparent
   overflow: hidden
   position: relative
-  transition: .2s map-get($transition, 'fast-in-slow-out')
+  transition: $progress-linear-transition
   width: 100%
 
-// Element
-.v-progress-linear__buffer
-  height: inherit
-  left: 0
-  position: absolute
-  top: 0
-  transition: inherit
-  width: 100%
-  z-index: 1
-
+// Elements
 .v-progress-linear__background
+  background: $progress-linear-background
   bottom: 0
   left: 0
+  opacity: $progress-linear-background-opacity
   position: absolute
   top: 0
+  transition-property: width, left, right
   transition: inherit
 
 .v-progress-linear__content
   align-items: center
   display: flex
   height: 100%
-  left: 0
   justify-content: center
+  left: 0
+  pointer-events: none
   position: absolute
   top: 0
   width: 100%
-  z-index: 2
+
+.v-progress-linear__determinate,
+.v-progress-linear__indeterminate
+  background: $progress-linear-background
 
 .v-progress-linear__determinate
   height: inherit
+  left: 0
+  position: absolute
   transition: inherit
+  transition-property: width, left, right
 
 .v-progress-linear__indeterminate
   .long, .short
-    background-color: inherit
+    animation-play-state: paused
+    animation-duration: $progress-linear-indeterminate-animation-duration
+    animation-iteration-count: infinite
     bottom: 0
     height: inherit
     left: 0
     position: absolute
+    right: auto
     top: 0
     width: auto
     will-change: left, right
 
-  &--active .long
-    animation: indeterminate
-    animation-duration: 2.2s
-    animation-iteration-count: infinite
+  .long
+    animation-name: indeterminate-ltr
 
-  &--active .short
-    animation: indeterminate-short
-    animation-duration: 2.2s
-    animation-iteration-count: infinite
+  .short
+    animation-name: indeterminate-short-ltr
 
 .v-progress-linear__stream
-  animation: stream .25s infinite linear
-  border-color: currentColor
-  border-top: 4px dotted
+  animation: $progress-linear-stream-animation
+  animation-play-state: paused
   bottom: 0
-  opacity: .3
+  left: auto
+  opacity: $progress-linear-stream-opacity
   pointer-events: none
   position: absolute
-  right: -8px
-  top: calc(50% - 2px)
   transition: inherit
+  transition-property: width, left, right
 
-.v-progress-linear__wrapper
-  overflow: hidden
-  position: relative
-  transition: inherit
+// Modifiers
+.v-progress-linear--reverse
+  .v-progress-linear__background,
+  .v-progress-linear__determinate,
+  .v-progress-linear__content
+    left: auto
+    right: 0
 
-// Modifier
+  .v-progress-linear__indeterminate
+    .long, .short
+      left: auto
+      right: 0
+
+    .long
+      animation-name: indeterminate-rtl
+
+    .short
+      animation-name: indeterminate-short-rtl
+
+  .v-progress-linear__stream
+    right: auto
+
 .v-progress-linear--absolute,
 .v-progress-linear--fixed
   left: 0
@@ -93,32 +106,46 @@
 .v-progress-linear--fixed
   position: fixed
 
-.v-progress-linear--reactive
-  .v-progress-linear__content
-    pointer-events: none
-
 .v-progress-linear--rounded
-  border-radius: $progress-linear-border-radius
+  @include tools.rounded($progress-linear-border-radius)
+
+  &.v-progress-linear--rounded-bar
+    .v-progress-linear__determinate,
+    .v-progress-linear__indeterminate
+      border-radius: inherit
 
 .v-progress-linear--striped
   .v-progress-linear__determinate
+    animation: $progress-linear-striped-animation
     background-image: $progress-linear-stripe-gradient
-    background-size: $progress-linear-stripe-background-size
-    background-repeat: repeat-x
+    background-repeat: repeat
+    background-size: $progress-linear-striped-size
 
-.v-progress-linear--query
+.v-progress-linear--active
   .v-progress-linear__indeterminate
-    &--active .long
-      animation: query
-      animation-duration: 2s
-      animation-iteration-count: infinite
+    .long, .short
+      animation-play-state: running
 
-    &--active .short
-      animation: query-short
-      animation-duration: 2s
-      animation-iteration-count: infinite
+  .v-progress-linear__stream
+    animation-play-state: running
 
-@keyframes indeterminate
+.v-progress-linear--rounded-bar
+  .v-progress-linear__determinate,
+  .v-progress-linear__indeterminate,
+  .v-progress-linear__stream + .v-progress-linear__background
+    @include tools.rounded($progress-linear-border-radius)
+
+  .v-progress-linear__determinate
+    @include tools.ltr()
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+
+    @include tools.rtl()
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+
+// Keyframes
+@keyframes indeterminate-ltr
   0%
     left: -90%
     right: 100%
@@ -129,7 +156,18 @@
     left: 100%
     right: -35%
 
-@keyframes indeterminate-short
+@keyframes indeterminate-rtl
+  0%
+    left: 100%
+    right: -90%
+  60%
+    left: 100%
+    right: -90%
+  100%
+    left: -35%
+    right: 100%
+
+@keyframes indeterminate-short-ltr
   0%
     left: -200%
     right: 100%
@@ -140,28 +178,21 @@
     left: 107%
     right: -8%
 
-@keyframes query
+@keyframes indeterminate-short-rtl
   0%
-    right: -90%
     left: 100%
-  60%
-    right: -90%
-    left: 100%
-  100%
-    right: 100%
-    left: -35%
-
-@keyframes query-short
-  0%
     right: -200%
-    left: 100%
   60%
-    right: 107%
     left: -8%
+    right: 107%
   100%
-    right: 107%
     left: -8%
+    right: 107%
 
 @keyframes stream
   to
-    transform: translateX(-8px)
+    transform: translateX(var(--v-progress-linear-stream-to))
+
+@keyframes progress-linear-stripes
+  0%
+    background-position-x: $progress-linear-striped-size

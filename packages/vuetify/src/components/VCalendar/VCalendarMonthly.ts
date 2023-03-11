@@ -1,3 +1,6 @@
+// @ts-nocheck
+/* eslint-disable */
+
 // Styles
 import './VCalendarWeekly.sass'
 
@@ -5,7 +8,8 @@ import './VCalendarWeekly.sass'
 import VCalendarWeekly from './VCalendarWeekly'
 
 // Util
-import { VTimestamp, parseTimestamp, getStartOfMonth, getEndOfMonth } from './util/timestamp'
+import { parseTimestamp, getStartOfMonth, getEndOfMonth } from './util/timestamp'
+import { CalendarTimestamp } from 'vuetify/types'
 
 /* @vue/component */
 export default VCalendarWeekly.extend({
@@ -15,11 +19,11 @@ export default VCalendarWeekly.extend({
     staticClass (): string {
       return 'v-calendar-monthly v-calendar-weekly'
     },
-    parsedStart (): VTimestamp {
-      return getStartOfMonth(parseTimestamp(this.start) as VTimestamp)
+    parsedStart (): CalendarTimestamp {
+      return getStartOfMonth(parseTimestamp(this.start, true))
     },
-    parsedEnd (): VTimestamp {
-      return getEndOfMonth(parseTimestamp(this.end) as VTimestamp)
+    parsedEnd (): CalendarTimestamp {
+      return getEndOfMonth(parseTimestamp(this.end, true))
     },
   },
 

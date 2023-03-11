@@ -17,4 +17,7 @@ coverage/
 
 # cypress
 cypress/screenshots
-cypress/videos 
+cypress/videos
+
+.vercel
+.now

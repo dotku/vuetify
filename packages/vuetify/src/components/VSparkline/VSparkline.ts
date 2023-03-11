@@ -1,9 +1,8 @@
-// Styles
-import './VSparkline.sass'
+// @ts-nocheck
+/* eslint-disable */
 
 // Mixins
 import Colorable from '../../mixins/colorable'
-import Themeable from '../../mixins/themeable'
 
 // Utilities
 import mixins, { ExtractVue } from '../../util/mixins'
@@ -41,12 +40,6 @@ export interface Bar {
   value: number
 }
 
-export interface BarText {
-  points: Point[]
-  boundary: Boundary
-  offsetX: number
-}
-
 interface options extends Vue {
   $refs: {
     path: SVGPathElement
@@ -56,13 +49,11 @@ interface options extends Vue {
 export default mixins<options &
 /* eslint-disable indent */
   ExtractVue<[
-    typeof Colorable,
-    typeof Themeable
+    typeof Colorable
   ]>
 /* eslint-enable indent */
 >(
-  Colorable,
-  Themeable,
+  Colorable
 ).extend({
   name: 'VSparkline',
 
@@ -91,9 +82,9 @@ export default mixins<options &
       default: false,
     },
     gradient: {
-      type: Array as Prop<string[]>,
+      type: Array,
       default: () => ([]),
-    },
+    } as PropValidator<string[]>,
     gradientDirection: {
       type: String as Prop<'top' | 'bottom' | 'left' | 'right'>,
       validator: (val: string) => ['top', 'bottom', 'left', 'right'].includes(val),
@@ -104,9 +95,9 @@ export default mixins<options &
       default: 75,
     },
     labels: {
-      type: Array as Prop<SparklineItem[]>,
+      type: Array,
       default: () => ([]),
-    },
+    } as PropValidator<SparklineItem[]>,
     labelSize: {
       type: [Number, String],
       default: 7,
@@ -125,14 +116,14 @@ export default mixins<options &
       default: false,
     },
     type: {
-      type: String,
+      type: String as Prop<'trend' | 'bar'>,
       default: 'trend',
       validator: (val: string) => ['trend', 'bar'].includes(val),
-    } as PropValidator<'trend' | 'bar'>,
-    value: {
-      type: Array as Prop<SparklineItem[]>,
-      default: () => ([]),
     },
+    value: {
+      type: Array,
+      default: () => ([]),
+    } as PropValidator<SparklineItem[]>,
     width: {
       type: [Number, String],
       default: 300,
@@ -144,12 +135,6 @@ export default mixins<options &
   }),
 
   computed: {
-    classes (): object {
-      return {
-        'v-sparkline': true,
-        ...this.themeClasses,
-      }
-    },
     parsedPadding (): number {
       return Number(this.padding)
     },
@@ -249,7 +234,11 @@ export default mixins<options &
       immediate: true,
       handler () {
         this.$nextTick(() => {
-          if (!this.autoDraw || this.type === 'bar') return
+          if (
+            !this.autoDraw ||
+            this.type === 'bar' ||
+            !this.$refs.path
+          ) return
 
           const path = this.$refs.path
           const length = path.getTotalLength()
@@ -289,7 +278,7 @@ export default mixins<options &
         this.$createElement('stop', {
           attrs: {
             offset: index / len,
-            'stop-color': color || this.color || 'currentColor',
+            'stop-color': color || 'currentColor',
           },
         })
       )
@@ -298,10 +287,11 @@ export default mixins<options &
         this.$createElement('linearGradient', {
           attrs: {
             id: this._uid,
-            x1: +(gradientDirection === 'left'),
-            y1: +(gradientDirection === 'top'),
-            x2: +(gradientDirection === 'right'),
-            y2: +(gradientDirection === 'bottom'),
+            gradientUnits: 'userSpaceOnUse',
+            x1: gradientDirection === 'left' ? '100%' : '0',
+            y1: gradientDirection === 'top' ? '100%' : '0',
+            x2: gradientDirection === 'right' ? '100%' : '0',
+            y2: gradientDirection === 'bottom' ? '100%' : '0',
           },
         }, stops),
       ])
@@ -312,7 +302,7 @@ export default mixins<options &
           fontSize: '8',
           textAnchor: 'middle',
           dominantBaseline: 'mathematical',
-          fill: this.color || 'currentColor',
+          fill: 'currentColor',
         } as object, // TODO: TS 3.5 is too eager with the array type here
       }, children)
     },
@@ -321,7 +311,6 @@ export default mixins<options &
 
       return this.$createElement('path', {
         attrs: {
-          id: this._uid,
           d: genPath(points, this._radius, this.fill, this.parsedHeight),
           fill: this.fill ? `url(#${this._uid})` : 'none',
           stroke: this.fill ? 'none' : `url(#${this._uid})`,
@@ -358,7 +347,6 @@ export default mixins<options &
           display: 'block',
           viewBox: `0 0 ${this.totalWidth} ${this.totalHeight}`,
         },
-        class: this.classes,
       }, [
         this.genGradient(),
         this.genClipPath(bars, offsetX, this._lineWidth, 'sparkline-bar-' + this._uid),
@@ -420,7 +408,6 @@ export default mixins<options &
           'stroke-width': this._lineWidth || 1,
           viewBox: `0 0 ${this.width} ${this.totalHeight}`,
         },
-        class: this.classes,
       }), [
         this.genGradient(),
         this.hasLabels && this.genLabels(-(this._lineWidth / 2)),

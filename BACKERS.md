@@ -1,124 +1,40 @@
 # Backers
 
-You can join them in supporting Vuetify.js by [pledging on Patreon](https://www.patreon.com/vuetify)
+You can join them in supporting Vuetify by [Sponsoring the Project](https://vuetifyjs.com/en/introduction/sponsors-and-backers/)
 
-### Premiere
+## Special
+
+- [teamwork](https://www.teamwork.com/)
+
+## Palladium
+
 - [QOMPLX](https://www.qomplx.com/)
-
-### Diamond
-- [LMAX Exchange](https://www.lmax.com/)
-- [Intygrate](http://intygrate.com/)
-- [Resale AI](http://resaleai.com/)
+- [sanofi](https://www.sanofi.us/en/)
 
 ### Platinum
-- [rateGenius](https://application.rategenius.com/) <!-- Ravi Alamuri -->
-- [Clearblue Technologies](http://www.clearbluetechnologies.com/) <!-- Mark Windrim -->
-- [DigitalMaas](https://www.digitalmaas.com/) <!-- Scott Francis -->
-- [Asolvi](http://asolvi.com/) <!-- Sverre Dreier -->
-- [Quanted Square](https://analytics.quantedsquare.com/)
+
+- [LMAX Exchange](https://www.lmax.com/)
+- [Intygrate](http://intygrate.com/)
+- [Vue Mastery](http://vuemastery.com/)
+- [Crossword Solver](http://crossword-solver.io/)
+- [slim.ai](https://www.slim.ai/)
+- [HEX Online Casino](https://netticasinohex.com/)
+- [Genius M](https://www.noneedtostudy.com/take-my-online-class/)
 
 ### Gold
-- [Xavier Escoté](http://www.deister.net/)
-- [Cycloid](https://www.cycloid.io/)
-- [Zweidenker](http://zweidenker.de) <!-- Christian Denker -->
-- [Software IDM](https://softwareidm.com/) <!-- Peter Sidebotham -->
-- [Hohenstein Laboratories](https://www.hohenstein.de/en/home/home.xhtml)
-- [P2L Technologies](https://p2l.tech/) <!-- Blaise Laflamme -->
-- [madhead](https://www.madhead.com/) <!-- Terence Tsang -->
-- Musashi Miyamori
-- Elfo s.r.l.
-- Codefirst
-- Dan Trevino
-- [customessaymeister](https://www.customessaymeister.com/)
-- [blokt](https://blokt.com/)
-- [Loomio](https://www.loomio.org/)
-- Hannes Kochniß
-- [EduBirdie](https://edubirdie.com/)
 
-### $20+
-- Michael Marti
-- [Aeroden](https://www.aeroden.com) <!-- Adrian Belovic -->
-- Jay Blanchard
-- Christo Crampton
-- Team of Monkeys
-- Robin Paolini
-- [Integra CCS](https://www.integraccs.com/)
-- Joel Hatch
-- Juha Vehnia
-- Kent Johnson
-- Working Group Two
-- Kyle Lawhorn
-- Jason Frueh
-- [Austin Ginder](https://austinginder.com/)
-- Brad Stewart
-
-### $10+
-- Chava Sobreyra
-- Costa Huang
-- Paul
-- Philippe Genois
-- Sam Bosell
-- Omar Spira
-- Jiří Žižka
-- Anthony Estebe
-- Eelco Wentrup
-- Mike Margerum
-- Mark Freedman
-- Alvin Wang
-- Jadranko Dragoje
-- Stanislovas Janonis
-- Brandon Deo
-- Idea Junction Ltd.
-- Michael Hipp
-- Keyur Desai
-- Blaine Landowski
-- Paul Whittemore
-- Helmi
-- Hexodus
-- Pierre Vanhulst
-- Brett Lindenberg
-- Cảnh Kiều
-- Dave Willenberg
-- James Chang
-- YubiGeek
-- Shu Ogawa
-- Daan Roet
-- Quentin Casares
-- Jeremy Hall
-- Harrison Leong
-- Cameron Cox
-- Harold Bruton
-- Daaron Dwyer
-- Adam Kaput
-- Eric Helgeson
-- Glen Azzopardi
-- Rich Harris
-- Jilson Thomas
-- Boris Dayma
-- Jaeyoung Lee
-- Nathanael Björkgård
-- Göran Ehrsson
-- Daniel Rivers
-- Tom McGee
-- Justin Sheppard
-- Steve Drucker
-- Morgan Benton
-- Christopher Bartling
-- Matheus Fonseca
-- Stephen Elliot
-- Jan Hjørdie
-- Chirstian Burkhard
-- Mateusz Gilewicz
-- Quitin Donnell henry
-- Salty Fish
-- Graham Hunter
-- Erik Vavro
-- Bohdan Kokotko
-- Daniel Chote
-- Mohammed Alkhuzayyim
-- Jonty Brook
-- Jose Rojas
-- Sean Kimball
-- MEHMET SAGLAM
-- Mark Couvaras
-- [quickytools](https://www.quickytools.com/)
+- [DigitalMaas](https://www.digitalmaas.com/)
+- [Quanted Square](https://quantedsquare.com/)
+- [HYPE](https://www.hypeinnovation.com/home)
+- [PapersOwl](https://papersowl.com/write-my-essay-please)
+- [Cosmic](https://www.cosmicjs.com/)
+- [Dealer Desk](https://www.dealerdesk.de/)
+- [Writers per Hour](https://writersperhour.com/buy-essay/)
+- [Top Rated Casino Sites](https://www.topratedcasinosites.co.uk/)
+- [AussieCasinoHex](https://aussiecasinohex.com/)
+- [Goread.io](https://goread.io/buy-instagram-follower)
+- [Casinoonlineaams](https://www.casinoonlineaams.com/)
+- [TM Design](https://medium.com/theymakedesign/best-web-design-companies-3ecc85b32071)
+- [NonGamStopWager](https://www.nongamstopwager.com/casinos-not-on-gamstop/)
+- [Crypto Casinos](https://cryptocasinos.com/)
+- [Buy Instagram Likes](https://www.instafollowers.co/buy-instagram-likes)

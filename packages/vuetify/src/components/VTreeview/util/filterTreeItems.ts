@@ -1,6 +1,8 @@
-import { getObjectValueByPath } from '../../../util/helpers'
+// @ts-nocheck
+/* eslint-disable */
 
-export type FilterTreeItemFunction = (item: object, search: string, textKey: string) => boolean
+import { getObjectValueByPath } from '../../../util/helpers'
+import { TreeviewItemFunction } from 'vuetify/types'
 
 export function filterTreeItem (item: object, search: string, textKey: string): boolean {
   const text = getObjectValueByPath(item, textKey)
@@ -9,7 +11,7 @@ export function filterTreeItem (item: object, search: string, textKey: string): 
 }
 
 export function filterTreeItems (
-  filter: FilterTreeItemFunction,
+  filter: TreeviewItemFunction,
   item: any,
   search: string,
   idKey: string,

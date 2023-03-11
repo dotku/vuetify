@@ -1,4 +1,5 @@
 export default {
+  badge: 'Märk',
   close: 'Sulge',
   dataIterator: {
     noResultsText: 'Vastavaid kirjeid ei leitud',
@@ -7,9 +8,12 @@ export default {
   dataTable: {
     itemsPerPageText: 'Ridu leheküljel:',
     ariaLabel: {
-      sortDescending: ': Kahanevalt sorteeritud. Vajuta uuesti sorteerimise eemaldamiseks.',
-      sortAscending: ': Kasvavalt sorteeritud. Vajuta uuesti, et sorteerida kahanevalt.',
-      sortNone: ': Ei ole sorteeritud. Vajuta kasvavalt sorteerimiseks.',
+      sortDescending: 'Kahanevalt sorteeritud.',
+      sortAscending: 'Kasvavalt sorteeritud.',
+      sortNone: 'Ei ole sorteeritud.',
+      activateNone: 'Vajuta uuesti sorteerimise eemaldamiseks.',
+      activateDescending: 'Vajuta uuesti, et sorteerida kahanevalt.',
+      activateAscending: 'Vajuta kasvavalt sorteerimiseks.',
     },
     sortBy: 'Sorteerimise alus',
   },
@@ -24,6 +28,10 @@ export default {
   },
   datePicker: {
     itemsSelected: '{0} valitud',
+    nextMonthAriaLabel: 'Järgmine kuu',
+    nextYearAriaLabel: 'Järgmine aasta',
+    prevMonthAriaLabel: 'Eelmine kuu',
+    prevYearAriaLabel: 'Eelmine aasta',
   },
   noDataText: 'Andmed puuduvad',
   carousel: {
@@ -36,6 +44,11 @@ export default {
   calendar: {
     moreEvents: '{0} veel',
   },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+  },
   fileInput: {
     counter: '{0} faili',
     counterSize: '{0} faili (kokku {1})',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Pagination Navigation',
+      next: 'Järgmine lehekülg',
+      previous: 'Eelmine lehekülg',
+      page: 'Mine lehele {0}',
+      currentPage: 'Praegune leht, leht {0}',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}',
+    },
   },
 }

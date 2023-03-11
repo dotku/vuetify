@@ -1,3 +1,6 @@
+// @ts-nocheck
+/* eslint-disable */
+
 import './VBottomSheet.sass'
 
 // Extensions
@@ -9,10 +12,7 @@ export default VDialog.extend({
 
   props: {
     inset: Boolean,
-    maxWidth: {
-      type: [String, Number],
-      default: 'auto',
-    },
+    maxWidth: [String, Number],
     transition: {
       type: String,
       default: 'bottom-sheet-transition',

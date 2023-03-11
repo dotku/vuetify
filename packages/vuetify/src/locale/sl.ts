@@ -1,4 +1,5 @@
 export default {
+  badge: 'Značka',
   close: 'Zapri',
   dataIterator: {
     noResultsText: 'Ni iskanega zapisa',
@@ -7,9 +8,12 @@ export default {
   dataTable: {
     itemsPerPageText: 'Vrstic na stran:',
     ariaLabel: {
-      sortDescending: ': Razvrščeno padajoče. Aktivirajte za odstranitev razvrščanja.',
-      sortAscending: ': Razvrščeno naraščajoče. Aktivirajte za padajoče razvrščanje.',
-      sortNone: ': Ni razvrščeno. Aktivirajte za naraščajoče razvrščanje.',
+      sortDescending: 'Razvrščeno padajoče.',
+      sortAscending: 'Razvrščeno naraščajoče.',
+      sortNone: 'Ni razvrščeno.',
+      activateNone: 'Aktivirajte za odstranitev razvrščanja.',
+      activateDescending: 'Aktivirajte za padajoče razvrščanje.',
+      activateAscending: 'Aktivirajte za naraščajoče razvrščanje.',
     },
     sortBy: 'Razvrsti po',
   },
@@ -24,6 +28,10 @@ export default {
   },
   datePicker: {
     itemsSelected: '{0} izbrano/-ih',
+    nextMonthAriaLabel: 'Naslednji mesec',
+    nextYearAriaLabel: 'Naslednje leto',
+    prevMonthAriaLabel: 'Prejšnji mesec',
+    prevYearAriaLabel: 'Prejšnje leto',
   },
   noDataText: 'Ni podatkov',
   carousel: {
@@ -36,6 +44,11 @@ export default {
   calendar: {
     moreEvents: 'Še {0}',
   },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+  },
   fileInput: {
     counter: '{0} datotek',
     counterSize: '{0} datotek ({1} skupno)',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navigacija po strani po strani',
+      next: 'Naslednja stran',
+      previous: 'Prejšnja stran',
+      page: 'Pojdi na stran {0}',
+      currentPage: 'Trenutna stran, stran {0}',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}',
+    },
   },
 }

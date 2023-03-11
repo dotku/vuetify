@@ -1,4 +1,5 @@
 export default {
+  badge: 'Badge',
   close: 'Close',
   dataIterator: {
     noResultsText: 'No matching records found',
@@ -7,9 +8,12 @@ export default {
   dataTable: {
     itemsPerPageText: 'Rows per page:',
     ariaLabel: {
-      sortDescending: ': Sorted descending. Activate to remove sorting.',
-      sortAscending: ': Sorted ascending. Activate to sort descending.',
-      sortNone: ': Not sorted. Activate to sort ascending.',
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending.',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.',
     },
     sortBy: 'Sort by',
   },
@@ -24,6 +28,10 @@ export default {
   },
   datePicker: {
     itemsSelected: '{0} selected',
+    nextMonthAriaLabel: 'Next month',
+    nextYearAriaLabel: 'Next year',
+    prevMonthAriaLabel: 'Previous month',
+    prevYearAriaLabel: 'Previous year',
   },
   noDataText: 'No data available',
   carousel: {
@@ -36,6 +44,11 @@ export default {
   calendar: {
     moreEvents: '{0} more',
   },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+  },
   fileInput: {
     counter: '{0} files',
     counterSize: '{0} files ({1} in total)',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Pagination Navigation',
+      next: 'Next page',
+      previous: 'Previous page',
+      page: 'Go to page {0}',
+      currentPage: 'Page {0}, Current page',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}',
+    },
   },
 }

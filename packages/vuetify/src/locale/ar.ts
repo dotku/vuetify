@@ -1,20 +1,24 @@
 export default {
+  badge: 'شارة',
   close: 'إغلاق',
   dataIterator: {
-    noResultsText: 'لا توجد سجلات مطابقة',
-    loadingText: 'تحميل العنصر...',
+    noResultsText: 'لم يتم إيجاد نتائج',
+    loadingText: 'يتم جلب العناصر...',
   },
   dataTable: {
-    itemsPerPageText: 'الصفوف لكل صفحة:',
+    itemsPerPageText: 'عدد الصفوف لكل صفحة:',
     ariaLabel: {
-      sortDescending: ': مفروز تنازلي. تنشيط لإزالة الفرز.',
-      sortAscending: ': مفروز تصاعدي. تنشيط للفرز التنازلي.',
-      sortNone: ': غير مفروزة. تفعيل لفرز تصاعدي.',
+      sortDescending: 'مرتب تنازلياً.',
+      sortAscending: 'مرتب تصاعدياً.',
+      sortNone: 'غير مرتب.',
+      activateNone: 'نشط لإزالة الترتيب.',
+      activateDescending: 'نشط للترتيب تنازلياً.',
+      activateAscending: 'نشط للترتيب تصاعدياً.',
     },
-    sortBy: 'مفروزة حسب',
+    sortBy: 'رتب حسب',
   },
   dataFooter: {
-    itemsPerPageText: 'العناصر لكل صفحة:',
+    itemsPerPageText: 'عدد العناصر لكل صفحة:',
     itemsPerPageAll: 'الكل',
     nextPage: 'الصفحة التالية',
     prevPage: 'الصفحة السابقة',
@@ -23,18 +27,27 @@ export default {
     pageText: '{0}-{1} من {2}',
   },
   datePicker: {
-    itemsSelected: '{0} مختارة',
+    itemsSelected: 'تم تحديد {0}',
+    nextMonthAriaLabel: 'الشهر القادم',
+    nextYearAriaLabel: 'العام القادم',
+    prevMonthAriaLabel: 'الشهر الماضى',
+    prevYearAriaLabel: 'السنة الماضية',
   },
-  noDataText: 'لا توجد بيانات متاحة',
+  noDataText: 'لا توجد بيانات',
   carousel: {
-    prev: 'البصري السابق',
-    next: 'البصري التالي',
+    prev: 'المعروض السابق',
+    next: 'المعروض التالي',
     ariaLabel: {
-      delimiter: 'Carousel slide {0} of {1}',
+      delimiter: 'المعروض رقم {0} من {1}',
     },
   },
   calendar: {
     moreEvents: '{0} أكثر',
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
   },
   fileInput: {
     counter: '{0} ملفات',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'صباحاً',
     pm: 'مساءً',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'الإنتقال بين الصفحات',
+      next: 'الصفحة التالية',
+      previous: 'الصفحة السابقة',
+      page: '{0} انتقل إلى الصفحة',
+      currentPage: '{0} الصفحة الحالية رقمها',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'القييم {0} من {1}',
+    },
   },
 }

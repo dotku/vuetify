@@ -1,30 +1,22 @@
-import Vue from 'vue'
-import App from './App'
-import Vuetify from 'vuetify'
-import * as locales from '../src/locale'
-import router from './router'
-import '@mdi/font/css/materialdesignicons.css'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
-Vue.config.performance = true
+import viteSSR from 'vite-ssr/vue'
+import { createHead } from '@vueuse/head'
+import App from './App.vue'
+import vuetify from './vuetify'
+import { routes } from './router'
 
-Vue.use(Vuetify)
+library.add(fas)
 
-const vuetify = new Vuetify({
-  lang: {
-    locales,
-  },
-})
+viteSSR(App, { routes }, ({ app }) => {
+  const head = createHead()
 
-const vm = new Vue({
-  data: () => ({ isLoaded: document.readyState === 'complete' }),
-  vuetify,
-  router,
-  render (h) {
-    return this.isLoaded ? h(App) : undefined
-  },
-}).$mount('#app')
+  // app.config.performance = true
+  app.use(head)
+  app.use(vuetify)
+  app.component('FontAwesomeIcon', FontAwesomeIcon)
 
-// Prevent layout jump while waiting for styles
-vm.isLoaded || window.addEventListener('load', () => {
-  vm.isLoaded = true
+  return { head }
 })

@@ -1,4 +1,5 @@
 export default {
+  badge: '徽章',
   close: '關閉',
   dataIterator: {
     noResultsText: '沒有符合條件的結果',
@@ -7,9 +8,12 @@ export default {
   dataTable: {
     itemsPerPageText: '每頁列數：',
     ariaLabel: {
-      sortDescending: '：降序排列。點擊以移除排序方式。',
-      sortAscending: '：升序排列。點擊以降序排列。',
+      sortDescending: '：降序排列。',
+      sortAscending: '：升序排列。',
       sortNone: '無排序方式。點擊以升序排列。',
+      activateNone: '點擊以移除排序方式。',
+      activateDescending: '點擊以降序排列。',
+      activateAscending: '點擊以移除排序方式。',
     },
     sortBy: '排序方式',
   },
@@ -24,6 +28,10 @@ export default {
   },
   datePicker: {
     itemsSelected: '已選擇 {0}',
+    nextMonthAriaLabel: '下個月',
+    nextYearAriaLabel: '明年',
+    prevMonthAriaLabel: '前一個月',
+    prevYearAriaLabel: '前一年',
   },
   noDataText: '沒有資料',
   carousel: {
@@ -36,6 +44,11 @@ export default {
   calendar: {
     moreEvents: '還有其他 {0} 項',
   },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+  },
   fileInput: {
     counter: '{0} 個檔案',
     counterSize: '{0} 個檔案（共 {1}）',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: '分頁導航',
+      next: '下一頁',
+      previous: '上一頁',
+      page: '轉到頁面 {0}',
+      currentPage: '當前頁 {0}',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}',
+    },
   },
 }

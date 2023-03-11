@@ -4,7 +4,7 @@
       <v-col cols="12">
         <h3
           ref="radio"
-          class="headline"
+          class="text-h5"
         >
           Target
         </h3>
@@ -52,7 +52,9 @@
       </v-col>
 
       <v-col cols="12">
-        <h3 class="headline">Options</h3>
+        <h3 class="text-h5">
+          Options
+        </h3>
 
         <v-select
           v-model="easing"
@@ -125,6 +127,7 @@
       element () {
         if (this.selected === 'Button') return this.$refs.button
         else if (this.selected === 'Radio group') return this.$refs.radio
+        else return null
       },
     },
   }

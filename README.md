@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/vuetifyjs/vuetify">
-    <img src="https://img.shields.io/travis/vuetifyjs/vuetify/dev.svg" alt="travis ci badge">
+  <a href="https://github.com/vuetifyjs/vuetify/actions?query=workflow%3ACI">
+    <img src="https://github.com/vuetifyjs/vuetify/workflows/CI/badge.svg?branch=master&event=push" alt="CI badge">
   </a>
   <a href="https://codecov.io/gh/vuetifyjs/vuetify">
     <img src="https://img.shields.io/codecov/c/github/vuetifyjs/vuetify.svg" alt="Coverage">
@@ -38,102 +38,111 @@
 
 <h2 align="center">Supporting Vuetify</h2>
 
-<p>Vuetify is an open source MIT project that has been made possible due to the generous contributions by <a href="https://github.com/vuetifyjs/vuetify/blob/dev/BACKERS.md">community backers</a>. If you are interested in supporting this project, please consider:</p>
+Vuetify is a [MIT licensed](http://opensource.org/licenses/MIT) project that is developed and maintained full-time by [John Leider](https://github.com/johnleider) and [Heather Leider](https://github.com/heatherleider); with support from the entire [Core Team](https://vuetifyjs.com/introduction/meet-the-team/). Sponsor Vuetify and receive some **awesome perks** and support Open Source Software at the same time! 🎉
 
 <ul>
   <li>
-    <a href="https://github.com/users/johnleider/sponsorship">Becoming a sponsor on Github</a>
-    <strong><small>(supports John)</small></strong>
+    <a href="https://github.com/users/johnleider/sponsorship">Become a backer or sponsor on GitHub</a>
+    or <a href="https://www.patreon.com/vuetify">Patreon</a> <small>(supports John and Heather)</small>
   </li>
   <li>
-    <a href="https://opencollective.com/vuetify">Becoming a backer on OpenCollective</a>
-    <strong><small>(supports the Dev team)</small></strong>
+    <a href="https://opencollective.com/vuetify">Become a backer or sponsor on Open Collective</a>
+    <strong><small>(supports the Core team)</small></strong>
   </li>
   <li>
-    <a href="https://tidelift.com/subscription/npm/vuetify?utm_source=vuetify&utm_medium=referral&utm_campaign=readme">Become a subscriber on Tidelift</a>
+    <a href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-vuetify&utm_medium=referral&utm_campaign=enterprise">Become a subscriber on Tidelift</a>
   </li>
   <li>
     <a href="https://paypal.me/vuetify">Make a one-time payment with Paypal</a>
   </li>
   <li>
-    <a href="https://vuetifyjs.com/professional-support/consulting?ref=github">Book time with John</a>
+    <a href="https://support.vuetifyjs.com/">Book time with the Team</a>
   </li>
 </ul>
 
-<h2 align="center"><b>Sponsors</b></h2>
+### What's the difference between GitHub Sponsors, Patreon, and OpenCollective?
 
-<h4 align="center"><b>Premiere</b></h4>
+Funds donated through GitHub Sponsors and Patreon go directly to support John and Heather's full-time work on Vuetify. Funds donated via Open Collective are managed with transparent expenses and will be used for compensating work and expenses for Core team members. Your name/logo will receive proper recognition and exposure by donating on either platform.
+
+<h3 align="center"><b>Special Sponsor</b></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <a href="https://www.teamwork.com/">
+          <img height="40px" src="https://cdn.cosmicjs.com/29a9d0b0-440a-11ed-8c9b-a1a0c9d2eef2-TWPOSRGB.png">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 align="center"><b>Palladium Sponsors</b></h3>
 
 <table>
   <tbody>
     <tr>
       <td>
         <a href="https://www.qomplx.com/?ref=vuetify-github">
-          <img height="50px" src="https://cdn.vuetifyjs.com/images/backers/QOMPLX.png">
+          <img height="40px" src="https://cdn.cosmicjs.com/145bda20-1fe1-11ed-a5bd-ef15a2e468ca-QOMPLX-logo-light.png">
+        </a>
+      </td>
+      <td>
+        <a href="https://www.sanofi.us/en/">
+          <img height="50px" src="https://cdn.cosmicjs.com/82029fc0-e0e7-11ec-bb19-d9085ce408df-c7b04c1c-ad15-452c-883f-2dd802ad7df9.png">
         </a>
       </td>
     </tr>
   </tbody>
 </table>
 
-<h4 align="center"><b>Diamond</b></h4>
+<h3 align="center"><b>Platinum Sponsors</b></h3>
 
 <table>
   <tbody>
     <tr>
       <td>
         <a href="https://careers.lmax.com/?utm_source=vuetify&utm_medium=github-link&utm_campaign=lmax-careers">
-          <img height="40px" src="https://cdn.vuetifyjs.com/images/backers/lmax-exchange.png">
+          <img height="30px" src="https://cdn.vuetifyjs.com/images/backers/lmax-exchange.png">
         </a>
       </td>
       <td>
         <a href="http://intygrate.com/?ref=vuetify-github">
-          <img height="40px" src="https://cdn.vuetifyjs.com/images/backers/intygrate.png">
-        </a>
-      </td>
-      <td>
-        <a href="http://resaleai.com/?ref=vuetify-github">
-          <img height="40px" src="https://cdn.vuetifyjs.com/images/backers/resaleai_logo_blue.svg">
+          <img height="30px" src="https://cdn.vuetifyjs.com/images/backers/intygrate.png">
         </a>
       </td>
       <td>
         <a href="http://vuemastery.com/?ref=vuetify-github">
-          <img height="40px" src="https://cdn.vuetifyjs.com/images/backers/vuemastery.svg">
+          <img height="30px" src="https://cdn.vuetifyjs.com/images/backers/vuemastery.svg">
+        </a>
+      </td>
+      <td>
+        <a href="http://crossword-solver.io/">
+          <img height="35px" src="https://cdn.cosmicjs.com/098aa4e0-9749-11eb-bf6a-1ffd0f06b0f7-crossword-solver-logo-light.svg">
         </a>
       </td>
     </tr>
-  </tbody>
-</table>
-
-<h4 align="center">Platinum</h4>
-
-<table>
-  <tbody>
+    <tr></tr>
     <tr>
       <td>
-        <a href="https://application.rategenius.com/?ref=vuetify-github">
-          <img height="30px" src="https://cdn.vuetifyjs.com/images/backers/rate-genius.png">
+        <a href="https://www.slim.ai/">
+          <img height="30px" src="https://cdn.cosmicjs.com/e7d53ff0-4ca5-11ec-9940-53a088b36636-slim-ai.svg">
         </a>
       </td>
       <td>
-        <a href="http://www.clearbluetechnologies.com/?ref=vuetify-github">
-          <img height="30px" src="https://cdn.vuetifyjs.com/images/backers/clear-blue.png">
+        <a href="https://netticasinohex.com/">
+          <img height="30px" src="https://cdn.cosmicjs.com/4442ad40-1fdc-11ed-a5bd-ef15a2e468ca-hex-ca-light-sm.png">
         </a>
       </td>
       <td>
-        <a href="https://www.digitalmaas.com/?ref=vuetify-github">
-          <img height="30px" src="https://cdn.vuetifyjs.com/images/backers/digital-maas.svg">
+        <a href="https://www.noneedtostudy.com/take-my-online-class/">
+          <img height="30px" src="https://cdn.cosmicjs.com/215133d0-248a-11ed-b52d-a3f33977cd87-medium-logo-alt.png">
         </a>
       </td>
       <td>
-        <a href="https://www.brightree.com/?ref=vuetify-github">
-          <img height="30px" src="https://cdn.vuetifyjs.com/images/backers/brightree.svg">
-        </a>
-      </td>
-      </td>
-      <td>
-        <a href="https://analytics.quantedsquare.com/?ref=vuetify-github">
-          <img height="30px" src="https://cdn.vuetifyjs.com/images/backers/quanted-square.svg">
+        <a href="https://crosswordanswers911.net/">
+          <img height="30px" src="https://cdn.cosmicjs.com/ef6ea2a0-7ee1-11ed-8730-d9eebcd39d9f-crossword-answers-911.jpg">
         </a>
       </td>
     </tr>
@@ -142,41 +151,78 @@
 
 <br>
 
-<h4 align="center"><b>Open Collective Sponsors</b></h4>
+### 🚀 Introduction
 
-<div align="center">
-  <a href="https://opencollective.com/vuetify">
-    <img src="https://opencollective.com/static/images/become_sponsor.svg" alt="Donate to OpenCollective">
-  </a>
-</div>
+Vuetify is a no design skills required UI Library with beautifully handcrafted Vue Components. No design skills required — everything you need to create amazing applications is at your fingertips. Vuetify has a massive API that supports any use-case. Some highlights include:
 
-<br>
+- **Customizable:** Extensive customization options with [SASS/SCSS](https://vuetifyjs.com/features/sass-variables/) and [Default configuration](https://vuetifyjs.com/features/presets/) and [Blueprints](https://vuetifyjs.com/features/blueprints/)
+- **Responsive Layout:** The default configuration of Vuetify components is responsive, allowing your application to adapt to different screen sizes.
+- **Theme System:** A powerful color system that makes it easy to style your application with a consistent color palette.
+- **Vite Support:** _Smaller_ bundle sizes with **automatic** tree-shaking
+- **18 months** Long-term support for [Major releases](https://vuetifyjs.com/introduction/long-term-support/)
+- **Internationalization:** 42+ supported languages
 
-### Introduction
+### 🌎 Vuetify Ecosystem
 
-Vuetify is a Material Design Component Framework for the Vue framework. We believe that you shouldn't need design skills to build beautiful Vue applications. Vuetify takes the pain out of development by providing everything you need:
-
-- Over 80 beautiful hand crafted Material Components
-- Powerful and unique directives for customizing user experiences
-- WCAG accessibility (a11y) and Section 508 compliant
-- Full RTL support
-- Support for IE11 / Safari 9 with [polyfill](https://vuetifyjs.com/getting-started/quick-start#ie-11-amp-safari-9-support)
-- Easily customizable with SASS variables and [vue-cli-plugin-vuetify](https://github.com/vuetifyjs/vue-cli-plugin-vuetify)
-- Built with the [Material Design 2 Specification](https://material.io/guidelines/)
-- Designed for mobile to desktop
-
-Vuetify is expansive, powerful and provides tools required for large, robust applications.
-
-###### Browser Support
-
-Vuetify supports all **modern browsers**, including IE11 and Safari 9+ (using [polyfills](https://vuetifyjs.com/getting-started/quick-start#ie-11-amp-safari-9-support)). Components are designed for a minimum width of _320px_.
-
-### Vuetify Ecosystem
+#### Resources
 
 <table>
   <thead>
     <tr>
-      <th>Project</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="https://support.vuetifyjs.com/?ref=github">
+          💫 Enterprise Support
+        </a>
+      </td>
+      <td>Let the experts at Vuetify help you get the most out of your application with a customized support plan from the the team behind the framework</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://community.vuetifyjs.com/?ref=github">
+          💭 Discord Community
+        </a>
+      </td>
+      <td>Our massive and inclusive Discord server where you can ask questions, share feedback, and connect with other Vuetify developers</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://play.vuetifyjs.com/?ref=github">
+          🎮 Vuetify Play
+        </a>
+      </td>
+      <td>A Vuetify 3 playground built using <a href="https://github.com/vuejs/repl">vuejs/repl</a> where you can play with our components</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://issues.vuetifyjs.com/?ref=github">
+          🐛 Vuetify Issues
+        </a>
+      </td>
+      <td>A web application for reporting bugs and issues with Vuetify, Documentation, or one of our other packages</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://store.vuetifyjs.com/?ref=github">
+          🛒 Vuetify Store
+        </a>
+      </td>
+      <td>The official Vuetify Store where you can download free digital products, purchase pre-made themes, and more</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Packages
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
       <th>Version</th>
       <th>Description</th>
     </tr>
@@ -184,96 +230,39 @@ Vuetify supports all **modern browsers**, including IE11 and Safari 9+ (using [p
   <tbody>
     <tr>
       <td>
-        <a href="https://github.com/vuetifyjs/vue-cli-preset-vuetify">vue-cli-preset-vuetify</a>
-      </td>
-      <td>
-        n/a
-      </td>
-      <td>
-       A Vue CLI 3 preset for Vuetify
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/vuetifyjs/vue-cli-plugin-vuetify">vue-cli-plugin-vuetify</a>
+        <a href="https://github.com/vuetifyjs/create-vuetify">
+          🛠️ create-vuetify
+        </a>
       </td>
       <td>
         <a href="https://www.npmjs.com/package/vue-cli-plugin-vuetify">
-          <img src="https://img.shields.io/npm/v/vue-cli-plugin-vuetify.svg" alt="Version">
+          <img src="https://img.shields.io/npm/v/create-vuetify.svg" alt="Version">
         </a>
       </td>
       <td>
-       A Vue CLI 3 plugin for installing and configuring Vuetify
+        Quickly spin up applications with a simple command.
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/vuetifyjs/vue-cli-plugin-vuetify-cli">vue-cli-plugin-vuetify-cli</a>
-      </td>
-      <td>
-        <a href="https://www.npmjs.com/package/vue-cli-plugin-vuetify-cli">
-          <img src="https://img.shields.io/npm/v/vue-cli-plugin-vuetify-cli.svg" alt="Version">
+        <a href="https://github.com/vuetifyjs/vuetify-loader/tree/next">
+          📦 vuetify-loader
         </a>
       </td>
       <td>
-       A Vue CLI 3 plugin for Scaffolding Vuetify projects
+        <a href="https://www.npmjs.com/package/@vuetify/cli-plugin-utils">
+          <img src="https://img.shields.io/npm/v/@vuetify/cli-plugin-utils.svg" alt="Version">
+        </a>
+      </td>
+      <td>
+        A collection of helper utilities for creating Vue CLI plugins
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/vuetifyjs/vue-cli-plugin-vuetify-essentials">vue-cli-plugin-vuetify-essentials</a>
-      </td>
-      <td>
-        <a href="https://www.npmjs.com/package/vue-cli-plugin-vuetify-essentials">
-          <img src="https://img.shields.io/npm/v/vue-cli-plugin-vuetify-essentials.svg" alt="Version">
+        <a href="https://github.com/vuetifyjs/eslint-plugin-vuetify">
+          📄 eslint-plugin-vuetify
         </a>
-      </td>
-      <td>
-       A Vue CLI 3 plugin for installing the `vue-cli-preset-vuetify` plugin
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/vuetifyjs/vue-cli-plugin-vuetify-storybook">vue-cli-plugin-vuetify-storybook</a>
-      </td>
-      <td>
-        <a href="https://www.npmjs.com/package/vue-cli-plugin-vuetify-storybook">
-          <img src="https://img.shields.io/npm/v/vue-cli-plugin-vuetify-storybook.svg" alt="Version">
-        </a>
-      </td>
-      <td>
-       A Vue CLI 3 plugin for installing the `vue-cli-preset-vuetify` plugin
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/vuetifyjs/vuetify-loader">vuetify-loader</a>
-      </td>
-      <td>
-        <a href="https://www.npmjs.com/package/vuetify-loader">
-          <img src="https://img.shields.io/npm/v/vuetify-loader.svg" alt="Version">
-        </a>
-      </td>
-      <td>
-       A webpack plugin for treeshaking and progressive image support
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/vuetifyjs/eslint-config-vuetify">eslint-config-vuetify</a>
-      </td>
-      <td>
-        <a href="https://www.npmjs.com/package/eslint-config-vuetify">
-          <img src="https://img.shields.io/npm/v/eslint-config-vuetify.svg" alt="Version">
-        </a>
-      </td>
-      <td>
-       An opinionated eslint-config for Vuetify
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/vuetifyjs/eslint-plugin-vuetify">eslint-plugin-vuetify</a>
       </td>
       <td>
         <a href="https://www.npmjs.com/package/eslint-plugin-vuetify">
@@ -284,38 +273,26 @@ Vuetify supports all **modern browsers**, including IE11 and Safari 9+ (using [p
        An opinionated eslint-plugin for Vuetify
       </td>
     </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/vuetifyjs/vuex/tree/master/packages/cognito-module/">vuex-cognito-module</a>
-      </td>
-      <td>
-        <a href="https://www.npmjs.com/package/@vuetify/vuex-cognito-module">
-          <img src="https://img.shields.io/npm/v/@vuetify/vuex-cognito-module.svg" alt="Version">
-        </a>
-      </td>
-      <td>
-       A <a href="https://vuex.vuejs.org/">Vuex</a> module for <a href="https://aws.amazon.com/cognito/">AWS Cognito</a>
-      </td>
-    </tr>
   </tbody>
 </table>
 
-### Documentation
+### 🖥️ Documentation
 
-To check out the [component api explorer](https://vuetifyjs.com/components/api-explorer) and docs, visit [vuetifyjs.com](https://vuetifyjs.com).
+To check out the docs, visit [vuetifyjs.com](https://vuetifyjs.com).
 
-### Questions
+![Crowdin Uploads](https://github.com/vuetifyjs/vuetify/workflows/Crowdin%20Uploads/badge.svg?branch=master)
 
-For help and support questions, please use our [community chat](https://community.vuetifyjs.com). This issue list of this repo is **exclusively** for bug reports and feature requests.
+###### Browser Support
 
-### Issues
-Please make sure to read the [Important Information](https://github.com/vuetifyjs/vuetify/blob/master/.github/CONTRIBUTING.md#important-information) before opening an issue. Issues not confirming to the guidelines may be closed immediately.
+Vuetify supports all **modern browsers**, including Safari 13+ (using [polyfills](https://vuetifyjs.com/getting-started/browser-support)). Components are designed for a minimum width of _320px_.
 
-### Changlog
-Detailed changes for each release are documented in the [release notes](https://github.com/vuetifyjs/vuetify/releases).
+### 🙋‍♂️ Questions
 
-### Contributing
-Developers interested in contributing should read the [Code of Conduct](./CODE_OF_CONDUCT.md) and the [Contribution Guide](https://vuetifyjs.com/getting-started/contributing).
+For help and support questions, please use our [Discord community](https://community.vuetifyjs.com). This issue list of this repo is **exclusively** for bug reports and feature requests.
+
+### 💁‍♂️ Contributing
+
+Developers interested in contributing should read the [Code of Conduct](./CODE_OF_CONDUCT.md) and the [Contribution Guide](https://vuetifyjs.com/getting-started/contributing/).
 
 > Please do **not** ask general questions in an issue. Issues are only to report bugs, suggest
   enhancements, or request new features. For general questions and discussions, ask in the [community chat](https://community.vuetifyjs.com/).
@@ -324,23 +301,18 @@ To help you get you familiar with our contribution process, we have a list of [g
 
 We also have a list of [help wanted](https://github.com/vuetifyjs/vuetify/labels/help%20wanted) issues that you might want to check.
 
+### 📝 Changelog
+
+Detailed changes for each release are documented in the [release notes](https://vuetifyjs.com/getting-started/release-notes/).
+
+### 📑 License
+
+Vuetify is available under the [MIT](http://opensource.org/licenses/MIT) software license.
+
+Copyright (c) 2016-present Vuetify, LLC
+
+----
+
 This project exists thanks to all the people who contribute 😍!
 
 <a href="https://github.com/vuetifyjs/vuetify/graphs/contributors"><img src="https://opencollective.com/vuetify/contributors.svg?width=890&button=false" /></a>
-
-###### Backers
-
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/vuetify#backer)]
-
-<a href="https://opencollective.com/vuetify#backers" target="_blank"><img src="https://opencollective.com/vuetify/backers.svg?width=890"></a>
-
-###### Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/vuetify#sponsor)]
-
-<a href="https://opencollective.com/vuetify/sponsor/0/website" target="_blank"><img src="https://opencollective.com/vuetify/sponsor/0/avatar.svg"></a>
-
-### 📑 License
-[MIT](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2016-present Vuetify LLC

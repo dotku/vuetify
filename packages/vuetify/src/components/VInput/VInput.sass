@@ -1,121 +1,87 @@
-@import '../../styles/styles.sass'
-
-/* Theme */
-+theme(v-input) using ($material)
-  &:not(.v-input--is-disabled)
-    input,
-    textarea
-      color: map-deep-get($material, 'text', 'primary')
-
-  input::placeholder,
-  textarea::placeholder
-    color: map-deep-get($material, 'text', 'disabled')
-
-  &--is-disabled
-    .v-label,
-    input,
-    textarea
-      color: map-deep-get($material, 'text', 'disabled')
+@use '../../styles/tools'
+@use './variables' as *
 
 .v-input
-  align-items: flex-start
-  display: flex
+  display: grid
   flex: 1 1 auto
-  font-size: 16px
-  letter-spacing: normal
-  max-width: 100%
-  text-align: left
+  font-size: $input-font-size
+  font-weight: $input-font-weight
+  line-height: 1.5
 
-  .v-progress-linear
-    top: calc(100% - 1px)
-    left: 0
-
-  input
-    max-height: 32px
-
-  input,
-  textarea
-    // Remove Firefox red outline
-    &:invalid
-      box-shadow: none
-
-    &:focus,
-    &:active
-      outline: none
-
-  .v-label
-    height: 20px
-    line-height: 20px
-
-  &__append-outer,
-  &__prepend-outer
-    display: inline-flex
-    margin-bottom: 4px
-    margin-top: 4px
-    line-height: 1
-
-    .v-icon
-      user-select: none
-
-  &__append-outer
-    +ltr()
-      margin-left: 9px
-
-    +rtl()
-      margin-right: 9px
-
-  &__prepend-outer
-    +ltr()
-      margin-right: 9px
-
-    +rtl()
-      margin-left: 9px
-
-  &__control
-    display: flex
-    flex-direction: column
-    height: auto
-    flex-grow: 1
-    flex-wrap: wrap
-    min-width: 0
-    width: 100% // For IE11
-
-  &__icon
-    align-items: center
-    display: inline-flex
-    height: 24px
-    flex: 1 0 auto
-    justify-content: center
-    min-width: 24px
-    width: 24px
-
-    &--clear
-      border-radius: 50%
-
-  &__slot
-    align-items: center
-    color: inherit
-    display: flex
-    margin-bottom: 8px
-    min-height: inherit
-    position: relative
-    transition: $primary-transition
-    width: 100%
-
-  &--dense > .v-input__control > .v-input__slot
-    margin-bottom: 4px
-
-  &--is-disabled:not(.v-input--is-readonly)
+  &--disabled
     pointer-events: none
 
-  &--is-loading > .v-input__control > .v-input__slot
-    &:before,
-    &:after
-      display: none
+  @at-root
+    @include tools.density('v-input', $input-density) using ($modifier)
+      --v-input-control-height: #{$input-control-height + $modifier}
+      --v-input-padding-top: #{16px + $modifier * .5}
 
-  &--hide-details > .v-input__control > .v-input__slot
-    margin-bottom: 0
+.v-input--vertical
+  grid-template-areas: "append" "control" "prepend"
+  grid-template-rows: max-content auto max-content
+  grid-template-columns: min-content
 
-  &--has-state
-    &.error--text .v-label
-      animation: v-shake .6s map-get($transition, 'swing')
+  .v-input__prepend
+    margin-block-start: $input-affix-margin-inside
+
+  .v-input__append
+    margin-block-end: $input-affix-margin-inside
+
+.v-input--horizontal
+  grid-template-areas: "prepend control append" "a messages b"
+  grid-template-columns: max-content minmax(0, 1fr) max-content
+  grid-template-rows: auto auto
+
+  .v-input__prepend
+    margin-inline-end: $input-affix-margin-inside
+
+  .v-input__append
+    margin-inline-start: $input-affix-margin-inside
+
+.v-input__details
+  align-items: flex-end
+  display: flex
+  font-size: $input-details-font-size
+  font-weight: $input-details-font-weight
+  grid-area: messages
+  letter-spacing: $input-details-letter-spacing
+  line-height: $input-details-line-height
+  min-height: $input-details-min-height
+  padding-top: $input-details-padding-above
+  overflow: hidden
+  justify-content: space-between
+
+.v-input__details,
+.v-input__prepend,
+.v-input__append
+  > .v-icon
+    opacity: var(--v-medium-emphasis-opacity)
+
+  .v-input--disabled &,
+  .v-input--error &
+    > .v-icon,
+    .v-messages
+      opacity: 1
+
+  .v-input--disabled &
+    opacity: var(--v-disabled-opacity)
+
+  .v-input--error:not(.v-input--disabled) &
+    > .v-icon,
+    .v-messages
+      color: rgb(var(--v-theme-error))
+
+.v-input__prepend,
+.v-input__append
+  display: flex
+  padding-top: var(--v-input-padding-top)
+
+.v-input__prepend
+  grid-area: prepend
+
+.v-input__append
+  grid-area: append
+
+.v-input__control
+  display: flex
+  grid-area: control

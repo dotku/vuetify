@@ -1,17 +1,16 @@
 <template>
   <v-app>
-    <v-content>
-      <playground></playground>
-    </v-content>
+    <Playground />
   </v-app>
 </template>
 
 <script>
-  import Playground from './Playground'
+  import Playground from './Playground.vue'
 
   export default {
+    name: 'App',
     components: {
-      Playground
-    }
+      Playground,
+    },
   }
 </script>

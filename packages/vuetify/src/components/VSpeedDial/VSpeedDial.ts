@@ -1,3 +1,6 @@
+// @ts-nocheck
+/* eslint-disable */
+
 // Styles
 import './VSpeedDial.sass'
 
@@ -12,7 +15,7 @@ import ClickOutside from '../../directives/click-outside'
 // Types
 import mixins from '../../util/mixins'
 import { VNode, VNodeData } from 'vue'
-import { PropValidator } from 'vue/types/options'
+import { Prop } from 'vue/types/options'
 
 /* @vue/component */
 export default mixins(Positionable, Toggleable, Transitionable).extend({
@@ -22,12 +25,12 @@ export default mixins(Positionable, Toggleable, Transitionable).extend({
 
   props: {
     direction: {
-      type: String,
+      type: String as Prop<'top' | 'right' | 'bottom' | 'left'>,
       default: 'top',
       validator: (val: string) => {
         return ['top', 'right', 'bottom', 'left'].includes(val)
       },
-    } as PropValidator<'top' | 'right' | 'bottom' | 'left'>,
+    },
     openOnHover: Boolean,
     transition: {
       type: String,

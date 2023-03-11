@@ -1,4 +1,5 @@
 export default {
+  badge: 'Insígnia',
   close: 'Tancar',
   dataIterator: {
     noResultsText: 'Sense dades per mostrar',
@@ -7,9 +8,12 @@ export default {
   dataTable: {
     itemsPerPageText: 'Files per pàgina:',
     ariaLabel: {
-      sortDescending: ': Ordre descendent. Premi per treure la ordenació.',
-      sortAscending: ': Ordre ascendent. Premi per ordenar descendent.',
-      sortNone: ': Sense ordenar. Premi per ordenar ascendent.',
+      sortDescending: 'Ordre descendent.',
+      sortAscending: 'Ordre ascendent.',
+      sortNone: 'Sense ordenar.',
+      activateNone: 'Premi per treure la ordenació.',
+      activateDescending: 'Premi per ordenar descendent.',
+      activateAscending: 'Premi per ordenar ascendent.',
     },
     sortBy: 'Ordenat per',
   },
@@ -24,6 +28,10 @@ export default {
   },
   datePicker: {
     itemsSelected: '{0} seleccionats',
+    nextMonthAriaLabel: 'El mes que ve',
+    nextYearAriaLabel: `L'any que ve`,
+    prevMonthAriaLabel: 'Mes anterior',
+    prevYearAriaLabel: 'Any anterior',
   },
   noDataText: 'Sense dades',
   carousel: {
@@ -36,6 +44,11 @@ export default {
   calendar: {
     moreEvents: '{0} més',
   },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+  },
   fileInput: {
     counter: '{0} fitxers',
     counterSize: '{0} fitxers ({1} en total)',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Navegació de la pàgina',
+      next: 'Pàgina següent',
+      previous: 'Pàgina anterior',
+      page: 'Ves a la pàgina {0}',
+      currentPage: 'Pàgina actual, pàgina {0}',
+      first: 'Primera pàgina',
+      last: 'Última pàgina',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Puntuació {0} de {1}',
+    },
   },
 }

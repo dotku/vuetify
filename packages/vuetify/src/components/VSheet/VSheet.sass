@@ -1,14 +1,14 @@
-// Imports
-@import './_variables.scss'
-
-// Theme
-+theme(v-sheet) using ($material)
-  background-color: map-get($material, 'cards')
-  border-color: map-get($material, 'cards')
-  color: map-deep-get($material, 'text', 'primary')
+@use '../../styles/tools'
+@use './variables' as *
 
 .v-sheet
-  border-radius: $sheet-border-radius
+  display: block
 
-  &--tile
-    border-radius: 0
+  @include tools.border($sheet-border...)
+  @include tools.elevation($sheet-elevation)
+  @include tools.position($sheet-positions)
+  @include tools.rounded($sheet-border-radius)
+  @include tools.theme($sheet-theme...)
+
+  &--rounded
+    @include tools.rounded($sheet-rounded-border-radius)

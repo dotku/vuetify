@@ -1,4 +1,5 @@
 export default {
+  badge: 'insigne',
   close: 'Sluiten',
   dataIterator: {
     noResultsText: 'Geen overeenkomende resultaten gevonden',
@@ -7,9 +8,12 @@ export default {
   dataTable: {
     itemsPerPageText: 'Rijen per pagina:',
     ariaLabel: {
-      sortDescending: ': Aflopend gesorteerd. Activeer om de sortering te verwijderen.',
-      sortAscending: ': Oplopend gesorteerd. Activeer om aflopend te sorteren.',
-      sortNone: ': Niet gesorterrd. Activeer om oplopend te sorteren.',
+      sortDescending: 'Aflopend gesorteerd.',
+      sortAscending: 'Oplopend gesorteerd.',
+      sortNone: 'Niet gesorteerd.',
+      activateNone: 'Activeer om de sortering te verwijderen.',
+      activateDescending: 'Activeer om aflopend te sorteren.',
+      activateAscending: 'Activeer om oplopend te sorteren.',
     },
     sortBy: 'Sorteer volgens',
   },
@@ -24,6 +28,10 @@ export default {
   },
   datePicker: {
     itemsSelected: '{0} geselecteerd',
+    nextMonthAriaLabel: 'Volgende maand',
+    nextYearAriaLabel: 'Volgend jaar',
+    prevMonthAriaLabel: 'Vorige maand',
+    prevYearAriaLabel: 'Vorig jaar',
   },
   noDataText: 'Geen gegevens beschikbaar',
   carousel: {
@@ -36,6 +44,11 @@ export default {
   calendar: {
     moreEvents: '{0} meer',
   },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
+  },
   fileInput: {
     counter: '{0} bestanden',
     counterSize: '{0} bestanden ({1} in totaal)',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'Paginanavigatie',
+      next: 'Volgende pagina',
+      previous: 'Vorige pagina',
+      page: 'Ga naar pagina {0}',
+      currentPage: 'Huidige pagina, pagina {0}',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}',
+    },
   },
 }

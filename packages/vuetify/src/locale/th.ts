@@ -1,17 +1,21 @@
 export default {
+  badge: 'สัญลักษณ์',
   close: 'ปิด',
   dataIterator: {
     noResultsText: 'ไม่พบข้อมูลที่ค้นหา',
-    loadingText: 'กำลังโหลดข้อมูล... กรุณารอสักครู่',
+    loadingText: 'กำลังโหลดข้อมูล...',
   },
   dataTable: {
     itemsPerPageText: 'แถวต่อหน้า:',
     ariaLabel: {
-      sortDescending: ': เรียงลำดับจากมากไปน้อย กดเพื่อปิดการเรียงลำดับ',
-      sortAscending: ': เรียงจากน้อยไปมาก กดเพื่อเรียงลำดับจากมากไปน้อย',
-      sortNone: ': ไม่ได้จัดเรียง กดเพื่อเรียงลำดับจากน้อยไปมาก',
+      sortDescending: 'เรียงจากมากไปน้อยอยู่',
+      sortAscending: 'เรียงจากน้อยไปมากอยู่',
+      sortNone: 'ไม่ได้เรียงลำดับ',
+      activateNone: 'กดเพื่อปิดการเรียงลำดับ',
+      activateDescending: 'กดเพื่อเรียงจากมากไปน้อย',
+      activateAscending: 'กดเพื่อเรียงจากน้อยไปมาก',
     },
-    sortBy: 'จัดเรียงตาม',
+    sortBy: 'เรียงตาม',
   },
   dataFooter: {
     itemsPerPageText: 'รายการต่อหน้า:',
@@ -24,17 +28,26 @@ export default {
   },
   datePicker: {
     itemsSelected: 'เลือก {0} วัน',
+    nextMonthAriaLabel: 'เดือนถัดไป',
+    nextYearAriaLabel: 'ปีถัดไป',
+    prevMonthAriaLabel: 'เดือนก่อนหน้า',
+    prevYearAriaLabel: 'ปีก่อนหน้า',
   },
   noDataText: 'ไม่มีข้อมูล',
   carousel: {
     prev: 'ภาพก่อนหน้า',
-    next: 'ภาพต่อไป',
+    next: 'ภาพถัดไป',
     ariaLabel: {
-      delimiter: 'Carousel slide {0} of {1}',
+      delimiter: 'ภาพสไลด์ที่ {0} จาก {1}',
     },
   },
   calendar: {
-    moreEvents: 'อีก {0}',
+    moreEvents: 'มีอีก {0}',
+  },
+  input: {
+    clear: 'Clear {0}',
+    prependAction: '{0} prepended action',
+    appendAction: '{0} appended action',
   },
   fileInput: {
     counter: '{0} ไฟล์',
@@ -43,5 +56,21 @@ export default {
   timePicker: {
     am: 'AM',
     pm: 'PM',
+  },
+  pagination: {
+    ariaLabel: {
+      root: 'การนำทางไปยังหน้า',
+      next: 'หน้าต่อไป',
+      previous: 'หน้าที่แล้ว',
+      page: 'ไปที่หน้า {0}',
+      currentPage: 'หน้าปัจจุบัน (หน้า {0})',
+      first: 'First page',
+      last: 'Last page',
+    },
+  },
+  rating: {
+    ariaLabel: {
+      item: 'Rating {0} of {1}',
+    },
   },
 }
